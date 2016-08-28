@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Change IP of your nodeMCU here
 	const host = '192.168.1.55';
+	const pinToManage = 2;
 
     var client = new net.Socket();
     client.connect(80, host, function() {
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var client = new net.Socket();
             client.connect(80, host, function() {
                 console.log('Connected');
-                client.write('!everesp{"action":"actionPinTriggerDigit","state":"0","pin":"2"}');
+                client.write('!everesp{"action":"actionPinTriggerDigit","state":"0","pin":"'+pinToManage+'"}');
             });
 
             $(this).addClass('socket-off').removeClass('socket-on');
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var client = new net.Socket();
             client.connect(80, host, function() {
                 console.log('Connected');
-                client.write('!everesp{"action":"actionPinTriggerDigit","state":"1","pin":"2"}');
+                client.write('!everesp{"action":"actionPinTriggerDigit","state":"1","pin":"'+pinToManage+'"}');
             });
 
             $(this).addClass('socket-on').removeClass('socket-off');
