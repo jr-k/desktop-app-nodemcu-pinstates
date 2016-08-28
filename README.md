@@ -3,8 +3,9 @@ Nodemcu Pins States
 This app simply provide you on ON/OFF button to manage a pin of a nodemcu, particle photon or other. The script needs the host and the pin number to operate.
 
 # Quick start
-The only development dependency of this project is [Node.js](https://nodejs.org). So just make sure you have it installed.
-Then type few commands known to every Node developer...
+
+Run these commands
+
 ```
 git clone https://github.com/jreziga/desktop-app-nodemcu-pinstates
 cd desktop-app-nodemcu-pinstates
