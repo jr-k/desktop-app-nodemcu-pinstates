@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Electron Boilerplate</title>
+
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <script src="helpers/context_menu.js"></script>
+    <script src="helpers/external_links.js"></script>
+    <script src="vendor/jquery.js"></script>
+
+    <script src="app.js"></script>
+
+    <script>if (window.module) module = window.module;</script>
+
+
+</head>
+<body>
+
+    <div class="bg">
+        <div style="position: absolute;top: 0;right: 2px;left:2px;background:rgba(0,0,0,0.05);height:30px;border-top-left-radius:8px;border-top-right-radius:8px;overflow:hidden;">
+            <div id="electron-titlebar" class="drag"></div>
+        </div>
+
+        <div class="container">
+            <a class="socket-trigger socket-off">
+                <i class="fa fa-power-off"></i>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

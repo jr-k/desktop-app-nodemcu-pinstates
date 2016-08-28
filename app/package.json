@@ -1,0 +1,19 @@
+{
+  "name": "everesp-sockloud",
+  "productName": "Everesp",
+  "description": "Socket on the cloud",
+  "version": "1.0.0",
+  "author": "Everesp Sockloud",
+  "copyright": "© 2016, Everesp inc.",
+  "homepage": "http://everesp.com",
+  "license": "MIT",
+  "main": "background.js",
+  "dependencies": {
+    "electron-titlebar": "0.0.1",
+    "fs-jetpack": "^0.9.0",
+    "ipc": "0.0.1",
+    "jquery": "^3.1.0",
+    "jsdom": "^9.4.2",
+    "socket.io": "^1.4.8"
+  }
+}

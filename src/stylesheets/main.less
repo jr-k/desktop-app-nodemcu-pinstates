@@ -1,0 +1,97 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+
+}
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  align-self: stretch;
+}
+
+
+.bg {
+  -webkit-app-region: drag;
+  border-radius:10px;
+  width: 98%;
+  height: 98%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  align-self: stretch;
+  border-bottom:2px solid #CCC;
+
+  overflow:hidden;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
+  background: #F2F2F2; /* Old browsers */
+  background: -moz-linear-gradient(top, #F2F2F2 0%, #EEE 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #F2F2F2 0%,#EEE 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #F2F2F2 0%,#EEE 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F2F2F2', endColorstr='#EEE',GradientType=0 ); /* IE6-9 */
+}
+
+a {
+  text-decoration: none;
+  color: #F2F2F2;
+  font-weight:bold;
+}
+.container {
+
+  -webkit-app-region: no-drag;
+
+  text-align: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  padding: 20px 50px;
+  color: white;
+  border-radius:6px;
+  border-bottom:2px solid #888;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 20px 0px 20px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.subtitle {
+  color: white;
+}
+
+.socket-trigger {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.socket-on {
+  color: #4EECF1;
+  text-shadow: 0 2px 30px #4EECF1;
+}
+
+.socket-off {
+  color: #DDDDDD;
+}
+
+
+@media (max-width:180px) {
+  .container {
+    padding: 10px 20px;
+  }
+}
