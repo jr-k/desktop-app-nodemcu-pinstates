@@ -37,11 +37,14 @@ if (env.name !== 'production') {
 app.on('ready', function () {
     setApplicationMenu();
 
+    var os = require('os');
+    var isWin = (os.platform() === 'win32');
+
     mainWindow = createWindow('main', {
         width: 180,
         height: 130,
-        frame: false,
-        transparent:true
+        frame: isWin ? false : true,
+        transparent: isWin ? true : false
     });
 
     mainWindow.loadURL('file://' + __dirname + '/app.html');
@@ -51,7 +54,7 @@ app.on('ready', function () {
     mainWindow.setResizable(false);
 
     if (env.name === 'development') {
-        mainWindow.openDevTools();
+        //mainWindow.openDevTools();
     }
 
 });

@@ -14,7 +14,11 @@ var app = remote.app;
 var appDir = jetpack.cwd(app.getAppPath());
 console.log('The author of this app is:', appDir.read('package.json', 'json').author);
 
+var os = require('os');
+var isWin = (os.platform() === 'win32');
+
 document.addEventListener('DOMContentLoaded', function () {
+
 
 	// Change IP of your nodeMCU here
 	const host = '192.168.1.55';
@@ -34,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     require("jsdom").env("", function(err, window) {
         if (err) { console.error(err); return; }
+
+        $('body').addClass(isWin ? 'windows' : 'mac');
 
         $(document).on('click','.socket-on',function(){
             console.log('[GO TO OFF]');
